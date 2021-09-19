@@ -1,0 +1,5 @@
+include gpc_classification_service/gpc.csv
+graft gpc_classification_service/model
+graft gpc_classification_service/static
+graft gpc_classification_service/templates
+global-exclude *.pyc

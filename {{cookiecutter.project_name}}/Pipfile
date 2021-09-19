@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+tensorflow = "*"
+pandas = "*"
+gunicorn = "*"
+pytest = "*"
+{{cookiecutter.project_name}} = {path = "."}
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

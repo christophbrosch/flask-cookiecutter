@@ -1,0 +1,20 @@
+version: "3.3"
+
+services: 
+    flask:
+        container_name: flask
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - '5000:5000'
+
+    nginx:
+        container_name: nginx
+        build: ./compose/production/nginx
+        ports:
+            - '80:80'
+            - '443:443'
+        depends_on: 
+            - flask
+        command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
