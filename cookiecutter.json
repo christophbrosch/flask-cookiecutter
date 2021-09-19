@@ -1,3 +1,4 @@
 {
-    "project_name": ""
+    "project_name": "",
+    "project_name_us": "{{ cookiecutter.project_name|replace('-', '_') }}"
 }

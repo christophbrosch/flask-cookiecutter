@@ -11,7 +11,7 @@ const mode = require('gulp-mode')({
 });
 const reload = browserSync.reload;
 
-const APP_NAME = '{{cookiecutter.project_name}}'
+const APP_NAME = '{{cookiecutter.project_name_us}}'
 
 const isProduction = mode.production();
 

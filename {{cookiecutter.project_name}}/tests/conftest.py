@@ -1,5 +1,5 @@
 import pytest
-from {{cookiecutter.project_name}}.app import create_app
+from {{cookiecutter.project_name_us}}.app import create_app
 
 @pytest.fixture
 def app():

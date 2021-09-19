@@ -12,7 +12,7 @@ def create_app(test = False, debug = True):
 
     # import inside create app to have current app context
     with app.app_context():
-        import {{cookiecutter.project_name}}.utils
+        import {{cookiecutter.project_name_us}}.utils
 
     @app.route("/")
     def index():
