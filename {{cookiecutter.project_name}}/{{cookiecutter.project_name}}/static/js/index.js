@@ -1,1 +1,1 @@
-// Add Bootstrap Stuff here
+// Add your own Javascript logic here.
