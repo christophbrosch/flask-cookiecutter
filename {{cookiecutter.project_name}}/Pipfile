@@ -5,8 +5,6 @@ name = "pypi"
 
 [packages]
 flask = "*"
-tensorflow = "*"
-pandas = "*"
 gunicorn = "*"
 pytest = "*"
 {{cookiecutter.project_name}} = {path = "."}
